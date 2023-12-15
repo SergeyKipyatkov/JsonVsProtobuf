@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package protobuf;
+
+option java_package = "ru.sberbank.protobuf";
+option java_outer_classname = "OrganizationsProtos";
+
+message Organization {
+  required string name = 1;
+  required string id = 2;
+}
+
+message Organizations {
+  repeated Organization organization = 1;
+}
